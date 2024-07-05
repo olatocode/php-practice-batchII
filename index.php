@@ -1,20 +1,17 @@
-<?php 
-//phpinfo()
-// $firstName = "Tobi \n";
-// $lastName = "Awosola";
-// $age = 18;
-// $isageValid = false;
-// $array = [1,2,3,4,5];
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php Course</title>
+</head>
+<body>
+    <h1>Learning Php Course</h1>
+        <p><?php include './Learning/dataTypes.php'?></p>
+        <p><?php include './Learning/student.php'?></p>
+        <p><?php include './Learning/array.php'?></p>
+        <p><?php include './Learning/conditional.php'?></p>
+        <!-- <p><?php include './Asssignment/assign-3.php'?></p> -->
 
-// $full_name = $firstName . $lastName;
-// // echo "My name is $full_name, I'm $age years old";
-// echo print_r($array);
-
-// define("name", "Tobi"); 
-// 	echo name; 
-
-
-?>
-
-<?php include 'array.php'?>
+</body>
+</html>

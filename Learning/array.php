@@ -41,6 +41,17 @@ $profile = array(
 // echo $profile["snacks"][0] . "<br>";
 // echo print_r($profile);
 
+$phones = array("samsung" => 800, "techno" => 500,"nokia" => 200 );
+
+echo $phones["samsung"] . "<br>";
+echo $phones["techno"] . "<br>";
+echo $phones["nokia"] . "<br>";
+
+echo print_r($phones);
+
+
+
+
 
 // Data type null and operators
 
@@ -49,16 +60,6 @@ $profile = array(
 // $x--;
 // $result = $x + $y;
 // print $result;
-
-// conditional statements
-$age = 20;
-if ($age < 18) {
-    echo "You are not eligible to vote in Nigeria";
-} elseif ($age == 18) {
-    echo "You are eligible to vote in Nigeria";
-} else {
-    echo "I don't know it you are eligible or not! ";
-}
 
 
 ?>
