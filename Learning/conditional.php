@@ -21,7 +21,7 @@ if($age != 18){
  echo '<br>';
  echo '<br>';
 // switch statements
-$Days = 4;
+$Days = 7;
 switch ($Days) {
       case 1:
       echo "Monday";
@@ -41,6 +41,15 @@ switch ($Days) {
 
       case  5:
       echo "Friday";
+      break;
+
+     case  6:
+      echo "Saturday";
+      break;
+
+      
+     case  7:
+      echo "Sunday";
       break;
 
       default: echo "its not part of the days";
