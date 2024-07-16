@@ -53,24 +53,45 @@ array_push($course, "python", "Javascript");
 // $qty = 1;
 
 
-function calSales ($products, $price, $qty){
-    $products =  $price * $qty;
-    $totalSales = $products;
-    echo $totalSales;
+// function calSales ($products, $price, $qty){
+//     $products =  $price * $qty;
+//     $totalSales = $products;
+//     echo $totalSales;
+// }
+
+// $bread = calSales("bread", 400, 2);
+// $tea = calSales("Tea", 200, 2);
+// echo "Bread: $bread";
+// echo "tea: $tea";
+
+
+// function Sales($bread, $tea){
+//   $total = $bread + $tea;
+//  echo $total;
+// }
+
+// Sales($bread, $tea);
+
+$products = [
+  ["bread", 400, 1],
+  ["tea", 200, 2],
+  ["milk", 200, 2],
+];
+
+
+function calculateTotalSales($products)
+{
+    $totalSales = 0;
+    foreach ($products as $product) {
+        $price = $product[1];
+        $quantity = $product[2];
+        $totalSales += $price * $quantity;
+    }
+    return $totalSales;
 }
 
-$bread = calSales("bread", 400, 2);
-$tea = calSales("Tea", 200, 2);
-echo "Bread: $bread";
-echo "tea: $tea";
-
-
-function Sales($bread, $tea){
-  $total = $bread + $tea;
- echo $total;
-}
-
-Sales($bread, $tea);
+$totalSales = calculateTotalSales($products);
+echo $totalSales;
 
 
 
