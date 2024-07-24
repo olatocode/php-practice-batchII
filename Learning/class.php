@@ -27,11 +27,59 @@ class Student
   
 }
 
-$students = new Student("Tobi", 18, "PHP", "Backend");
+// $students = new Student("Tobi", 18, "PHP", "Backend");
 
-$students->displayInfo();
+// $students->displayInfo();
 
 
+class User {
+    var $name;
+    var $id;
+    var $skills;
+
+    function __construct($name, $id, $skills) {
+        $this->name = $name;
+        $this->id = $id;
+        $this->skills = $skills;
+    }
+
+    static function displayInfo($user) {
+        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
+    }
+}
+
+$user = new User("Tobi", 1, "Backend");
+User::displayInfo($user);
+
+class User {
+    public $name;
+    public $id;
+    public $skills;
+
+    function __construct($name, $id, $skills) {
+        $this->name = $name;
+        $this->id = $id;
+        $this->skills = $skills;
+    }
+
+    static function displayInfo($user) {
+        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
+    }
+}
+
+$user = new User("Tobi", 1, "Backend");
+ User::displayInfo($user);
+
+
+
+// $user1 = new User();
+// $user1-> name = "Tobi";
+// $user1-> id = 1;
+// $user1-> skills = "Backend";
+
+// echo $user1->name . "<br>";
+// echo $user1->id . "<br>";
+// echo $user1->skills . "<br>";
 
 
 
