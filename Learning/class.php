@@ -32,43 +32,43 @@ class Student
 // $students->displayInfo();
 
 
-class User {
-    var $name;
-    var $id;
-    var $skills;
+// class User {
+//     var $name;
+//     var $id;
+//     var $skills;
 
-    function __construct($name, $id, $skills) {
-        $this->name = $name;
-        $this->id = $id;
-        $this->skills = $skills;
-    }
+//     function __construct($name, $id, $skills) {
+//         $this->name = $name;
+//         $this->id = $id;
+//         $this->skills = $skills;
+//     }
 
-    static function displayInfo($user) {
-        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
-    }
-}
+//     static function displayInfo($user) {
+//         echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
+//     }
+// }
 
-$user = new User("Tobi", 1, "Backend");
-User::displayInfo($user);
+// $user = new User("Tobi", 1, "Backend");
+// User::displayInfo($user);
 
-class User {
-    public $name;
-    public $id;
-    public $skills;
+// class User {
+//     public $name;
+//     public $id;
+//     public $skills;
 
-    function __construct($name, $id, $skills) {
-        $this->name = $name;
-        $this->id = $id;
-        $this->skills = $skills;
-    }
+//     function __construct($name, $id, $skills) {
+//         $this->name = $name;
+//         $this->id = $id;
+//         $this->skills = $skills;
+//     }
 
-    static function displayInfo($user) {
-        echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
-    }
-}
+//     static function displayInfo($user) {
+//         echo "My name is " . $user->name . ". My Id is " . $user->id . ". My skill is " . $user->skills . ".";
+//     }
+// }
 
-$user = new User("Tobi", 1, "Backend");
- User::displayInfo($user);
+// $user = new User("Tobi", 1, "Backend");
+//  User::displayInfo($user);
 
 
 
@@ -80,6 +80,42 @@ $user = new User("Tobi", 1, "Backend");
 // echo $user1->name . "<br>";
 // echo $user1->id . "<br>";
 // echo $user1->skills . "<br>";
+
+
+class Vehicle {
+    public $maker;
+    public $model;
+
+    public function __construct ($maker, $model){
+        $this->maker = $maker;
+        $this->model = $model;
+    }
+
+    public function displayV(){
+        echo "My maker is " . $this->maker . " and my model is " . $this->model;
+    }
+}
+
+ class Car extends Vehicle {
+     public $color;
+     public function __construct($maker, $model, $color){
+        $this->maker = $maker;
+        $this->model = $model;
+        $this->color = $color;
+     }
+      
+     public function displayInfo(){
+        $this->displayV();
+        echo "My color is " . $this->color;
+     }
+
+ }
+
+ $car = new Car("Toyota", "Corolla", "Black");
+ $car->displayInfo();
+
+//  $car = new Vehicle("BMW", "2024");
+//  $car->displayV();
 
 
 
