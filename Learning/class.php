@@ -81,8 +81,12 @@ class Student
 // echo $user1->id . "<br>";
 // echo $user1->skills . "<br>";
 
-
+include './logger.php';
+ 
 class Vehicle {
+
+    use copy;
+
     public $maker;
     public $model;
 
@@ -92,7 +96,7 @@ class Vehicle {
     }
 
     public function displayV(){
-        echo "My maker is " . $this->maker . " and my model is " . $this->model;
+        echo "My maker is " . $this->maker . " and my model is " . $this->model . $this->copyCode('Car displayed');
     }
 }
 

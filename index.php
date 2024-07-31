@@ -13,7 +13,8 @@
         <p><?php include './Learning/conditional.php'?></p>  -->
         <!-- <p><?php include './Learning/loops.php'?></p>  -->
         <!-- <p><?php include './Asssignment/assign-3.php'?></p> -->
-        <p><?php include './Learning/functions.php'?></p>
+        <!-- <p><?php include './Learning/functions.php'?></p> -->
+        <p><?php include './Learning/class2.php'?></p>
 
 </body>
 </html>
