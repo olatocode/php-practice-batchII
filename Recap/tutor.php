@@ -47,7 +47,7 @@ $object = new stdClass();
         }
     }
 
-    $myPerson = new Person("Tobi", 18);
+    $myPerson = new Person("James", 18);
     $myPerson->displayInfo();    
     // $myPerson->name = "Tobi";
     // $myPerson->age = 18;
